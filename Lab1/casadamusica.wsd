@@ -1,0 +1,23 @@
+@startuml casa da musica
+
+scale 2
+left to right direction
+skinparam packageStyle rect
+actor "Instalações" as inst
+actor "Cultural" as cult
+actor "Público Geral" as pgeral
+actor "Cliente" as cliente
+actor "Empregado de Caixa" as caixa
+rectangle casadamusica{
+   inst -- (registar de salas)
+   cult -- (registar espetáculos)
+   cult -- (registar artistas)
+   cult -- (consultar estatísticas)
+   pgeral -- (consultar programação)
+   pgeral -- (registar como cliente)
+   cliente -- (reserva de bilhetes)
+   cliente -- (consultar programação)
+   caixa -- (vender bilhetes)
+}
+
+@enduml
