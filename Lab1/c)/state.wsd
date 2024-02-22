@@ -1,0 +1,8 @@
+@startuml casa da musica
+[*] --> Disponível
+Disponível --> Reservado : Reservas
+Disponível --> Vendido : Vendas
+Reservado --> Vendido : Reserva Concluída
+Reservado --> Disponível : Data limite passada
+Vendido --> [*]
+@enduml
