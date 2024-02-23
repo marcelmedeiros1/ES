@@ -1,0 +1,18 @@
+@startuml casa da musica
+|Cliente|
+start
+:Identificar-se;
+:Apresentar Reserva;
+|Funcionario|
+:Verificar no Sistema;
+|Sistema Informático|
+:Validar registo e reserva;
+:Calcular Preço e Desconto;
+|Funcionario|
+:Solicitar Pagamento;
+|Cliente|
+:Realizar Pagamento;
+|Funcionario|
+:Concluir Pedido;
+stop
+@enduml
