@@ -1,0 +1,19 @@
+@startuml
+
+Cliente -> Funcionario : Se identifica e mostra reserva
+Funcionario -> Sistema : Verifica dados e reserva
+alt se reserva encontrada
+    
+    Sistema -> Funcionario : Autenticação aceita
+    Sistema -> Funcionario : Reserva encontrada
+    Funcionario -> Cliente : Informa preço e desconto
+    Cliente -> Funcionario : Realiza Pagamento
+    Funcionario -> Cliente : Pedido Finalizado
+
+else se autenticação falhou
+
+    Sistema -> Funcionario : Autenticação recusada
+    Funcionario -> Cliente : Informa a recusa
+
+end
+@enduml

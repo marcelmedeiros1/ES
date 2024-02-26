@@ -1,0 +1,11 @@
+@startuml
+[Interface do Usuario] ..> [Base de dados]
+[Gestão de Espetáculos] ..> [Gestão de bilhetes e reservas]
+[Base de dados] ..> [Gestão de clientes]
+[Gestão de bilhetes e reservas] ..> [Gestão de pedidos]
+[Gestão de clientes] ..> [Gestão de pedidos]
+
+
+
+
+@enduml
